@@ -15,5 +15,5 @@ Interested in chatting, collaborating, or contracting? Let's connect. You'll fin
 * Email: &#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
 * Twitter: [@tdoubleuu](https://twitter.com/TDoubleuu)
 * LinkedIn: [tim.j.welch](http://www.linkedin.com/in/timjwelch/)
-* [Github](https://github.com/twelch)
+* Github: [twelch](https://github.com/twelch)
 * IRC: tdubya at irc.freenode.net
