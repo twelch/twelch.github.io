@@ -102,7 +102,3 @@ Running the dense reconstruction yielded a point cloud that was consistent aroun
 ## Taking it further with Meshlab
 
 The point density produced through this technique is plenty high enough to produce a 3D model.  This can be done with the open source project [Meshlab](http://meshlab.sourceforge.net/).  There are some great tutorials online showing you how to do this.  One warning, Meshlab is known to crash once in a while with certain point clouds.  This was the case with many of mine.  Good luck!
-
-## What's next
-
-Three.JS Photosynth projects
