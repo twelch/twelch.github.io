@@ -53,7 +53,7 @@ Here's the plan that is starting to take shape:
 2. Develop this system in collaboration with the World Bank [Open DRI Initiative](https://www.gfdrr.org/opendri) supporting the aggregation of data to the regional level that is produced by both regional and national partners (e.g. [St. Lucia National Integrated Geonode](http://sling.gosl.gov.lc/), 
 3. Identify key data and web services provided by each of the four systems, and publish them for use by the other systems with the approval of the data providers.
 
-These meetings have been an important first step in uniting these projects which first and foremost intend to serve the needs of the individual countries and their goals of better managing their natural resources, their economy, and their communities.  I find myself pleasantly surprised at the willingness of everyone involved to work together and find common ground with developing these systems.  I think in many ways they still have a lot to prove, which only motivates me further.  I look forward to seeing what comes next.
+These meetings have been an important first step in uniting these projects which first and foremost intend to serve the needs of the individual countries and their goals of better managing their natural resources, their economy, and their communities.  I find myself pleasantly surprised at the willingness of everyone involved to work together and find common ground with developing these systems.  I think in many ways these types of systems still have a lot to prove in terms of their value to supporting work on the ground, which only motivates me further.  I look forward to seeing what comes next.
 
 <figure class="half">
     <a href="/images/posts/stlucia-gimie1.jpg"><img src="/images/posts/stlucia-gimie1.jpg"></a>
