@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convergence of Data in the Eastern Caribbean
+title: Data Convergence in the Eastern Caribbean
 description: ""
 modified: 2014-05-26
 category: articles
