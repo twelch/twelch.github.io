@@ -22,10 +22,11 @@ First, install both Virtualbox and Vagrant on your system.  I installed on OSX M
 cd ~/src
 mkdir geonode
 cd geonode
-vagrant init hashicorp/precise32
+vagrant box add ubuntu/trusty https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+vagrant init ubuntu/trusty
 {% endhighlight %}
 
-This installs Ubuntu Precise 12.04 LTS, a little bit dated at this point but very stable with GeoNode and good enough for my needs.
+This establishes a Ubuntu Trusty 14.04 LTS virtual machine that will be provisioned when you start it up.
 
 Edit the new Vagrantfile file that’s created.  Add 3 new port forward lines below it, 8000 for the django dev server, 8001 for apache, and 8080 for Geoserver
 
@@ -49,7 +50,8 @@ vagrant ssh
 {% highlight bash %}
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install -y --force-yes build-essential libxml2-dev libxslt1-dev python-dev python-imaging python-lxml python-pyproj python-shapely python-nose python-httplib2 python-pip python-software-properties openjdk-6-jdk ant maven2 git gettext nodejs
+sudo apt-get install -y build-essential libxml2-dev libxslt1-dev libjpeg-dev gettext git python-dev python-pip python-pillow python-lxml python-psycopg2 python-django python-bs4 python-multipartposthandler transifex-client python-paver python-nose python-django-nose python-gdal python-django-pagination python-django-jsonfield python-django-extensions python-django-taggit python-httplib2 nodejs apache2 gcc gdal-bin libapache2-mod-wsgi libgeos-dev libpng-dev libpq-dev libproj-dev patch postgresql-9.3 postgresql-9.3-postgis-2.1 python-imaging python-pastescript python-support python-urlgrabber python-virtualenv tomcat7 unzip zip
+sudo apt-get install -y --force-yes openjdk-6-jdk ant maven2 --no-install-recommends
 sudo npm install -y -g bower grunt-cli
 {% endhighlight %}
 
@@ -59,71 +61,18 @@ I skipped the virtualenv steps at this point in the docs since I'm working on a 
 
 [http://geonode.readthedocs.org/en/latest/tutorials/admin/install/custom_install.html#custom-install]()
 
-Now install Java, Python, PostgreSQL, Apache, GDAL, PIL, and other needed tools.  Keep in mind that the version numbers for some of these packages will change as time goes on.  It should go without saying that you may need to update these to the most recent version.
-
-{% highlight bash %}
-sudo apt-get install       \
-    apache2                \
-    gcc                    \
-    gdal-bin               \
-    gettext                \
-    gettext                \
-    git-core               \
-    libapache2-mod-wsgi    \
-    libgeos-dev            \
-    libjpeg-dev            \
-    libpng-dev             \
-    libpq-dev              \
-    libproj-dev            \
-    libxml2-dev            \
-    libxslt-dev            \
-    openjdk-6-jre          \
-    patch                  \
-    postgresql-9.1         \
-    postgresql-9.1-postgis \
-    postgresql-contrib     \
-    postgresql-contrib-9.1 \
-    python                 \
-    python-dev             \
-    python-gdal            \
-    python-imaging         \
-    python-pastescript     \
-    python-psycopg2        \
-    python-support         \
-    python-urlgrabber      \
-    python-virtualenv      \
-    tomcat7                \
-    unzip                  \
-    zip
-{% endhighlight %}
-
 # Clone and Setup GeoNode
 
 I cloned  the master branch of the GeoNode Github repository and put it in the shared workspace that Vagrant has created at _/vagrant_.  Anything you put in this directory is visible from your host machine in the folder that you did a _vagrant up_ and vice versa.  This allows you to write code from your host operating system with your favorite text editor.
 
 {% highlight bash %}
 git clone https://github.com/GeoNode/geonode.git
+sudo pip install -e geonode
 cd geonode
-sudo pip install .
 sudo paver setup
-sudo service tomcat7 stop
 {% endhighlight %}
 
-I stopped the Tomcat service because I don't need it just yet and it automatically starts when you install it, taking up port 8080. We want to test out running Geoserver with the lightweight Jetty web server first.
-
-{% highlight bash %}
-sudo paver start -b 0.0.0.0:8000
-{% endhighlight %}
-
-This runs multiple commands starting up Geoserver using Jetty, generating all of the Geonode database tables in SQLite, and starting up Geonode using the Django development server.  This command has an added _-b_ parameter binding the Django dev server not just to 127.0.0.1 but to all of the available network adapters allowing you to access the application from your host system.  Now you can load up this lightweight install of Geonode using a web browser on your host operating system.
-
-{% highlight html %}
-http://localhost:8000
-{% endhighlight %}
-
-If all goes well you'll see the GeoNode front page.
-
-# Configure PostGIS, Tomcat, and Apache
+# Setup PostGIS
 
 The next step was to get Geonode working with PostGIS and install Geoserver to run under the Tomcat web server and startup automatically with the VM.
 
@@ -141,12 +90,12 @@ createuser -P geonode
 {% highlight bash %}
 createdb -E 'utf-8' -l en_US.utf8 -O geonode -T template0 geonode
 createdb -E 'utf-8' -l en_US.utf8 -O geonode -T template0 geonode-imports
-psql -f /usr/share/postgresql/9.1/contrib/postgis-1.5/postgis.sql geonode-imports
-psql -f /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql geonode-imports
+psql -f /usr/share/postgresql/9.3/contrib/postgis-2.1/postgis.sql geonode-imports
+psql -f /usr/share/postgresql/9.3/contrib/postgis-2.1/spatial_ref_sys.sql geonode-imports
 psql -d geonode-imports -c 'GRANT ALL ON geometry_columns TO PUBLIC;'
 psql -d geonode-imports -c 'GRANT ALL ON spatial_ref_sys TO PUBLIC;'
 exit
-sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 # Change the ‘local all all’ from ‘peer’ to ‘trust’
 # Save and exit nano
 sudo service postgresql restart
@@ -170,6 +119,36 @@ python manage.py syncdb
 python manage.py collectstatic
 mkdir -p /vagrant/geonode/geonode/uploaded
 sudo chown www-data -R /vagrant/geonode/geonode/uploaded
+{% endhighlight %}
+
+{% highlight bash %}
+cd /vagrant/geonode
+paver start_django -b 0.0.0.0:8000
+{% endhighlight %}
+
+Browse to [http://localhost:8000]().  You should get the Geonode home page, with no data layers loaded yet.  Let's load up some data layers that come with Geonode using the _setup_data_ command.
+
+{% highlight bash %}
+paver setup_data
+{% endhighlight %}
+
+For a full list of useful Paver commands for GeoNode, check out [http://geonode.readthedocs.org/en/latest/tutorials/devel/envsetup/paver.html]().  Refresh your GeoNode page to see the new data layers.  You’ll know if the linkage to Geoserver is working properly if you can see the thumbnail images for each layer.
+
+Now we're ready to hack some GeoNode code.  One important note, the _start_django_ paver command by default runs the dev server as a _background process_, sending debug output to the terminal while still allowing you to continue to run commands.  However, if you want to do debugging with Python’s PDB, you will need to run the dev server in the foreground so that it can capture debug commands from you.  To do this you can skip the paver command and just use the Django runserver command directly:
+
+{% highlight bash %}
+paver stop_django
+python manage.py runserver 0.0.0.0:8000
+{% endhighlight %}
+
+GeoNode should work just fine now.  Press Ctrl-C to quit the dev server when you're done.  If you need another terminal to do other things on the server, just open another terminal and vagrant ssh in
+
+# Setup Tomcat
+
+{% highlight bash %}
+sudo service tomcat7 stop
+sudo cp /vagrant/geonode/downloaded/geoserver.war /var/lib/tomcat7/webapps/
+sudo /etc/init.d/tomcat7 start
 {% endhighlight %}
 
 ## Setup Apache
@@ -233,41 +212,6 @@ sudo chown www-data:www-data /vagrant/geonode/geonode/static/
 sudo chown www-data:www-data /vagrant/geonode/geonode/uploaded/
 sudo chown www-data:www-data /vagrant/geonode/geonode/static_root/
 {% endhighlight %}
-
-## Setup Tomcat
-
-{% highlight bash %}
-sudo cp /vagrant/geonode/downloaded/geoserver.war /var/lib/tomcat7/webapps/
-sudo /etc/init.d/tomcat7 start
-{% endhighlight %}
-
-# Back to the Django Dev Server
-
-I then fire up the Django dev server again which I’ll use for active development
-
-{% highlight bash %}
-cd /vagrant/geonode
-paver start_django -b 0.0.0.0:8000
-{% endhighlight %}
-
-Note I'm not running _paver start_ anymore because I no longer need to startup Geoserver, it's up and running with Tomcat now on its own.  I can use the _start_django_ command instead to just run GeoNode with the Django dev server.
-
-Browse to [http://localhost:8000]().  You should get the Geonode home page, with no data layers loaded yet.  Let's load up some data layers that come with Geonode using the _setup_data_ command.
-
-{% highlight bash %}
-paver setup_data
-{% endhighlight %}
-
-For a full list of useful Paver commands for GeoNode, check out [http://geonode.readthedocs.org/en/latest/tutorials/devel/envsetup/paver.html]().  Refresh your GeoNode page to see the new data layers.  You’ll know if the linkage to Geoserver is working properly if you can see the thumbnail images for each layer.
-
-Now we're ready to hack some GeoNode code.  One important note, the _start_django_ paver command by default runs the dev server as a _background process_, sending debug output to the terminal while still allowing you to continue to run commands.  However, if you want to do debugging with Python’s PDB, you will need to run the dev server in the foreground so that it can capture debug commands from you.  To do this you can skip the paver command and just use the Django runserver command directly:
-
-{% highlight bash %}
-paver stop_django
-python manage.py runserver 0.0.0.0:8000
-{% endhighlight %}
-
-GeoNode should work just fine now.  Press Ctrl-C to quit the dev server when you're done.  If you need another terminal to do other things on the server, just open another terminal and vagrant ssh in
 
 # Final Geoserver test
 
