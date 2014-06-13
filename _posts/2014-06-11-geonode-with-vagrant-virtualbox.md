@@ -165,14 +165,13 @@ I also went ahead and setup serving of GeoNode using Apache.  I don't use this f
 
 {% highlight bash %}
 sudo a2enmod proxy_http
-sudo nano /etc/apache2/sites-available/geonode
+sudo nano /etc/apache2/sites-available/geonode.conf
 {% endhighlight %}
 
 Now let's setup a standard Apache virtual host to serve our Django app using WSGI on Port 80.  We'll also proxy Geoserver through this port as well, a typical configuration for production use.  Note the Pythonpath at the top includes the path to GeoNode and the path to dist-packages where all of the third-party Python modules are.  If you are using a virtual environment, a different version of Python etc. then these paths may be different.
 
 {% highlight apache %}
-WSGIDaemonProcess geonode python-path=/vagrant/geonode:/usr/local/lib/python2.7/dist-packages
- user=www-data threads=15 processes=2
+WSGIDaemonProcess geonode python-path=/vagrant/geonode:/usr/local/lib/python2.7/dist-packages user=www-data threads=15 processes=2
 
 <VirtualHost *:80>
     ServerName http://localhost
@@ -188,18 +187,18 @@ WSGIDaemonProcess geonode python-path=/vagrant/geonode:/usr/local/lib/python2.7/
     WSGIScriptAlias / /vagrant/geonode/geonode/wsgi.py
 
     <Directory "/vagrant/geonode/geonode/">
-    Order allow,deny
+        Order deny,allow
+        Require all granted
         Options Indexes FollowSymLinks
-        Allow from all
         IndexOptions FancyIndexing
-    </Directory>
+    </Directory>    
 
     Alias /static/ /vagrant/geonode/geonode/static_root/
     Alias /uploaded/ /vagrant/geonode/geonode/uploaded/
 
     <Proxy *>
-        Order allow,deny
-        Allow from all
+        Order deny,allow
+        Require all granted
     </Proxy>
 
     ProxyPreserveHost On
@@ -211,7 +210,7 @@ WSGIDaemonProcess geonode python-path=/vagrant/geonode:/usr/local/lib/python2.7/
 Next up is enabling the new virtualhost and setting all the proper directory permissions so that the Apache user _www-data_ can read and write files on behalf of our application.
 
 {% highlight bash %}
-sudo a2ensite geonode
+sudo a2ensite geonode.conf
 sudo service apache2 reload
 {% endhighlight %}
 
