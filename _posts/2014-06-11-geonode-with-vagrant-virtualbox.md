@@ -34,6 +34,19 @@ config.vm.network "forwarded_port", guest: 8000, host: 8000
 config.vm.network "forwarded_port", guest: 8080, host: 8080
 {% endhighlight %}
 
+Now let's increase the default memory from 512MB to 1024MB by uncommenting the appropriate Vagrantfile lines 51-58
+
+{% highlight bash %}
+  config.vm.provider "virtualbox" do |vb|
+  #   # Don't boot with headless mode
+  #   vb.gui = true
+  #
+  #   # Use VBoxManage to customize the VM. For example to change memory:
+     vb.customize ["modifyvm", :id, "--memory", "1024"]
+   end
+  #
+{% endhighlight %}
+
 Next, use Vagrant to start up the VM and log in via SSH.  Notice you didn't need to open up Virtualbox to run your VM.  Vagrant takes care of this for you through it's commands.  If you do open up Virtualbox you will see your new VM running.  
 
 {% highlight bash %} 
@@ -79,7 +92,7 @@ sudo su postgres
 createuser -P geonode
 {% endhighlight %} 
 
-Set the password to GeoNode also when prompted, and set as superuser.  Of course if this is a public-facing server, use a different password.
+Set the password to geonode when prompted, and set as superuser.  You can change this later and should on a public-facing server.
 
 {% highlight bash %}
 createdb -E 'utf-8' -l en_US.utf8 -O geonode -T template0 geonode
@@ -96,18 +109,6 @@ sudo service postgresql restart
 {% endhighlight %}
 
 The reason for the UTF-8 settings is that I was getting a utf8 encoding error when loading the initial data fixture for GeoNode so I amended the createdb command to create UTF-8 tables from the start.
-
-## Setup Tomcat
-
-Next, Geoserver is setup to run under Tomcat on startup of the VM.
-
-{% highlight bash %}
-sudo service tomcat7 stop
-sudo cp /vagrant/geonode/downloaded/geoserver.war /var/lib/tomcat7/webapps/
-sudo /etc/init.d/tomcat7 start
-{% endhighlight %}
-
-You should now be able to browse to http://localhost:8080/geoserver from the host operating system and access Geoserver.
 
 # Finish GeoNode Setup
 
@@ -136,16 +137,18 @@ sudo chown www-data -R /vagrant/geonode/geonode/uploaded
 
 {% highlight bash %}
 cd /vagrant/geonode
-paver start_django -b 0.0.0.0:8000
+paver start -b 0.0.0.0:8000
 {% endhighlight %}
 
-Browse to [http://localhost:8000]().  You should get the Geonode home page, with no data layers loaded yet.  Let's load up some data layers that come with Geonode using the _setup_data_ command.
+Browse to [http://localhost:8000]().  You should get the Geonode home page.  Browse to [http://localhost:8080]().  You should get the Geoserver home page.  
+
+As an alternative you could have run _paver start_geoserver_ and _paver start_django_ separately and there are times you will want to do this.  Now, let's load up some sample data layers that come with Geonode using the _setup_data_ paver command.
 
 {% highlight bash %}
 paver setup_data
 {% endhighlight %}
 
-Now we're ready to hack some GeoNode code.  One important note, the _start_django_ paver command by default runs the dev server as a background process, sending debug output to the terminal while still allowing you to continue to run commands.  However, if you want to do debugging with Python’s PDB, you will need to run the dev server in the foreground so that the debugger can capture debug commands from you.  Otherwise you will get an error with the debugger reaches a breakpoint.  To workaround this you can skip the paver command and just use the more direct Django runserver command directly:
+16 data layers should load.  Now you're ready to hack some GeoNode.  As you start developing on the Python side of GeoNode there's one thing to keep in mind.  The _start_django_ paver command by default runs the dev server as a background process.  If you want to use the Python debugger it needs the dev server to be running in the foreground in your terminal so that it can capture input from you.  Otherwise it will error on the first breakpoint it comes to.  To workaround this you can skip the paver command and just use the more direct Django runserver command directly:
 
 {% highlight bash %}
 paver stop_django
@@ -159,16 +162,32 @@ GeoNode should work just fine now.  Press Ctrl-C to quit the dev server when you
 
 # Setting Up For Production
 
-I also went ahead and setup serving of GeoNode using Apache.  I don't use this for active development but if Apache is your production web server of choice, then it's useful to use it as a final check before pushing your code to staging or production.
+I also went ahead and setup serving of Geoserver using Tomcat and GeoNode using Apache, with Geoserver proxying through Apache so that it is accessible on port 80.  I don't use this for active development but if Apache is your production web server of choice, then it's useful to use it as a final check before pushing your code to staging or production.
 
-## Setup Apache
+# Serve Geoserver through Tomcat
+
+{% highlight bash %}
+sudo service tomcat7 stop
+sudo cp /vagrant/geonode/downloaded/geoserver.war /var/lib/tomcat7/webapps/
+sudo /etc/init.d/tomcat7 start
+{% endhighlight %}
+
+We setup Geoserver with Tomcat and proxied it through Apache remember?  You should be able to access Geoserver now at the following link.  In a real production environment you would need to change local_settings.py accordingly to use port 80 to access Geoserver.
+
+{% highlight html %}
+http://localhost:8001/geoserver
+{% endhighlight %}
+
+## Serve GeoNode through Apache and Proxy Geoserver
+
+Now let's setup a standard Apache virtual host to serve our Django app using WSGI on Port 80.  We'll also proxy Geoserver through this port as well, a typical configuration for production use.
 
 {% highlight bash %}
 sudo a2enmod proxy_http
 sudo nano /etc/apache2/sites-available/geonode.conf
 {% endhighlight %}
 
-Now let's setup a standard Apache virtual host to serve our Django app using WSGI on Port 80.  We'll also proxy Geoserver through this port as well, a typical configuration for production use.  Note the Pythonpath at the top includes the path to GeoNode and the path to dist-packages where all of the third-party Python modules are.  If you are using a virtual environment, a different version of Python etc. then these paths may be different.
+Copy the following into this site config file.  Note the Pythonpath at the top includes the path to GeoNode and the path to dist-packages where all of the third-party Python modules are.  If you are using a virtual environment, a different version of Python etc. then these paths may be different.  Note the _Require all granted_ setting which is a change from earlier Apache versions.
 
 {% highlight apache %}
 WSGIDaemonProcess geonode python-path=/vagrant/geonode:/usr/local/lib/python2.7/dist-packages user=www-data threads=15 processes=2
@@ -214,7 +233,7 @@ sudo a2ensite geonode.conf
 sudo service apache2 reload
 {% endhighlight %}
 
-Now if go to http://localhost:8001/admin on the host machine (8001 is the port on the host that we forwarded port 80 to), the Django admin should load.
+Now if go to [http://localhost:8001/admin]() on the host machine (8001 is the port on the host that we forwarded port 80 to), the Django admin should load.  If you browse to [http://localhost:8001/geoserver]() then Geoserver should load.  Note that your GeoNode is still set to look for Geoserver on port 8080.
 
 {% highlight bash %}
 sudo chown www-data:www-data /vagrant/geonode/geonode/static/
@@ -222,10 +241,4 @@ sudo chown www-data:www-data /vagrant/geonode/geonode/uploaded/
 sudo chown www-data:www-data /vagrant/geonode/geonode/static_root/
 {% endhighlight %}
 
-# Final Geoserver test
-
-We setup Geoserver with Tomcat and proxied it through Apache remember?  You should be able to access Geoserver now at the following link.  In a real production environment you would need to change local_settings.py accordingly to use port 80 to access Geoserver.
-
-{% highlight html %}
-http://localhost:8001/geoserver
-{% endhighlight %}
+That's it, good luck.
