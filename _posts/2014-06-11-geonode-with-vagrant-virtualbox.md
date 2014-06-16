@@ -108,7 +108,7 @@ sudo nano /etc/postgresql/9.3/main/pg_hba.conf
 sudo service postgresql restart
 {% endhighlight %}
 
-The reason for the UTF-8 settings is that I was getting a utf8 encoding error when loading the initial data fixture for GeoNode so I amended the createdb command to create UTF-8 tables from the start.
+The reason for the UTF-8 settings is that I was getting a utf8 encoding error when loading the initial data fixture for GeoNode.  More specifically, there seemed to be a UTF-8 character in the fixture, so I amended the createdb command to create tables that supported UTF-8 tables from the start instead of simply latin characters.
 
 # Finish GeoNode Setup
 
