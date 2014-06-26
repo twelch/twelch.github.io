@@ -34,8 +34,6 @@ bing_verify: 5FA08EFEFC9BA0775DA9F386E8D1C8C4
 links:
   - title: Articles
     url: /articles/
-  - title: Hacks
-    url: /hacks/
   - title: Connect
     url: /connect/
 
