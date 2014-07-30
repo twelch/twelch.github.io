@@ -118,7 +118,7 @@ Then it was time to add the landslide scarps.  A scarp is the steep exposed area
 
 ## Landslide Deposits
 
-Next I added the landslide deposit boundaries which are the areas of soil and rock that actually moved and form the debris field of the slide.  For these I applied a color ramp based on the angle of the slope.
+Next I added the landslide deposit boundaries which are the areas of soil and rock that actually moved and form the debris field of the slide.  For these I applied a color ramp based on the angle of the slope.  Yellow is a slope less than 10 degrees, orange 10-15, light red 15-25, and dark red greater than 25.  You might be surprised to see that many of the historical landslides are not on extremely steep slopes.
 
 <figure>
     <a href="/images/posts/slidetm2/deposit.png"><img src="/images/posts/slidetm2/deposit.png"></a>
