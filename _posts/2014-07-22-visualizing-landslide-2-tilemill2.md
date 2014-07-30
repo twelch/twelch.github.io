@@ -30,7 +30,7 @@ To get started I downloaded the latest [Statewide Landslide Information Database
     <a href="/images/posts/slidetm2/load_datasource.png"><img src="/images/posts/slidetm2/load_datasource.png"></a>
 </figure>
 
-I then published the data layers to mapbox.com as remote datasources (with Mapnik vector tile support!).  Note that the pdx_deposit_marker layer is something that I created myself which I'll discuss later.
+I then published the data layers to mapbox.com (as vector tiles instead of image tiles!).
 
 <figure>
     <a href="/images/posts/slidetm2/remote_upload.png"><img src="/images/posts/slidetm2/remote_upload.png"></a>
@@ -42,7 +42,7 @@ Next I downloaded the [OSM Bright](https://github.com/mapbox/osm-bright.tm2) pro
     <a href="/images/posts/slidetm2/streets.png"><img src="/images/posts/slidetm2/streets.png"></a>
 </figure>
 
-I then added both the Terrain and Landslide datasources to the project using their respective Map ID's.  The order of the datasources in this list is critical as the first map ID listed is rendered first and so on.  In my case I wanted the terrain layer listed first, followed by the landslide data, and then the streets layer.
+I then added both the Terrain and Landslide datasources to the project using their respective Map ID's.  The order of the datasources in this list is critical as the first map ID listed is rendered on the bottom.  In my case I wanted the terrain layer to be on the bottom, followed by the landslide features, and then the streets layer.
 
 <figure>
     <a href="/images/posts/slidetm2/remote1.png"><img src="/images/posts/slidetm2/remote1.png"></a>
