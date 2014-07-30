@@ -93,7 +93,7 @@ Next I styled the terrain layer adding landcover, a soft hillshade, and small al
 
 ## Landslide Scarps
 
-A scarp is the steep exposed area at the source of a slide that often cleanly breaks from the soil or rock above.  I styled the scarp lines with a dark dashed line to match the DOGAMI map and then styled the scarp flank below the line with a light transparent brown.
+Then it was time to add the landslide scarps.  A scarp is the steep exposed area at the source of a slide that often cleanly breaks from the soil or rock above.  I styled the scarp lines with a dark dashed line to match the DOGAMI map and then styled the scarp flank below the line with a light transparent tan color.
 
 <figure>
     <a href="/images/posts/slidetm2/scarp.png"><img src="/images/posts/slidetm2/scarp.png"></a>
