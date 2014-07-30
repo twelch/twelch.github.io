@@ -182,6 +182,8 @@ Wow, a lot of the buildings at the Zoo are sitting on old relatively low-angle l
 
 Concern aside, I'm really looking forward to the formal release of Tilemill 2 sometime this year to be able to push some of these map visualizatons further.  In the meantime you can find these Tilemill 2 project files on my GitHub and you are welcome to work with them:
 
-(https://github.com/twelch/osm-bright.tm2/tree/pdx-landslide)[]
+[https://github.com/twelch/osm-bright.tm2/tree/pdx-landslide](https://github.com/twelch/osm-bright.tm2/tree/pdx-landslide)
 
-In addition, the landslide data I published on mapbox.com is publicly available for use with the Map ID - twelch.ct9e8kt9.
+In addition, the landslide data I published on mapbox.com is publicly available for use with the Map ID twelch.ct9e8kt9
+
+Enjoy.
