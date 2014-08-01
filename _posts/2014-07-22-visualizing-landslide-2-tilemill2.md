@@ -201,6 +201,6 @@ Concern aside, I'm really looking forward to the formal release of Tilemill 2 so
 
 [https://github.com/twelch/osm-bright.tm2/tree/pdx-landslide](https://github.com/twelch/osm-bright.tm2/tree/pdx-landslide)
 
-In addition, the landslide data I published on mapbox.com is publicly available for use with the Map ID twelch.ct9e8kt9.  This data is not available as image tiles as far as I know, only as vector tiles.
+In addition, the landslide data I published on mapbox.com is publicly available for use with the Map ID twelch.ct9e8kt9.  This data is not published as image tiles as far as I know, only as vector tiles for use in Tilemill 2.
 
 Enjoy.
