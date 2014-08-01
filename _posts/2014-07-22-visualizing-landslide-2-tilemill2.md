@@ -152,7 +152,7 @@ Finally I added in the directional arrows for the deposit polygons based on the 
 
 To do this I first used QGIS to create a layer of regularly spaced points by going to Vector->Research Tools->Regular Points.  Play around with this to find a point density that suits your needs.  Note that this creates a lot of points!  I was only working with landslide data for the Portland area so it wasn't a big issue.
 
-Then I clipped this point layer against the deposits layer creating evenly spaced points within the deposit polygons
+Then I clipped this point layer against the deposits layer creating evenly spaced points within the deposit polygons.
 
 <figure>
     <a href="/images/posts/slidetm2/dots.png"><img src="/images/posts/slidetm2/dots.png"></a>
@@ -165,6 +165,23 @@ I then added this deposit marker layer to the map along with the CartoCSS needed
 <figure>
     <a href="/images/posts/slidetm2/deposit_arrow.png"><img src="/images/posts/slidetm2/deposit_arrow.png"></a>
 </figure>
+
+{% highlight css %}
+#pdx_deposit_marker [zoom>=15]{
+  [SLOPE<=90] {marker-fill: #a4291f;}  
+  [SLOPE<=25] {marker-fill: #d35944;}
+  [SLOPE<=15] {marker-fill: #ee9168;}
+  [SLOPE<=10] {marker-fill: #f7ca75;}  
+
+  marker-type: arrow;
+  marker-line-color:  transparent;
+  marker-fill-opacity: 1.0;
+  marker-height: 7;
+  marker-width: 7;
+  /* Caution the DIRECT attribute is not based on a 0 degree north! */
+  marker-transform: rotate([DIRECT]-90,0,0);
+}
+{% endhighlight %}
 
 Not a bad start.  With the arrows I can really start to see how the soil moved on the landscape in relation to the topography.  You can almost *feel* the size of the larger landslides with all of the tightly packed arrows.  Here's what it looks like when I zoom into an area showing schools and other public buildings.
 
