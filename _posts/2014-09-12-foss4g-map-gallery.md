@@ -43,7 +43,7 @@ The gallery backend was built on top of Wordpress using the [Ninja Forms API](ht
 
 ### Voting
 
-As an incentive to submit, we offered prizes from Mapbox, CartoDB, and ESRI for a variety of judged categories including best cartography, best use of open source data, and best anti-map map.  A People's Choice award was also offered where we allowed gallery viewers to vote for their favorits maps at the press of a button, the most popular winning the award on the conference Gala night.
+As an incentive to submit, we offered prizes from Mapbox, CartoDB, and ESRI as well as copies of the 2014 NACIS Atlas of Design for a variety of judged categories including best cartography, best use of open source data, and best anti-map map.  A People's Choice award was also offered where we allowed gallery viewers to vote for their favorits maps at the press of a button, the most popular winning the award on the conference Gala night.
 
 # Conference Video
 
@@ -52,9 +52,13 @@ As an incentive to submit, we offered prizes from Mapbox, CartoDB, and ESRI for 
 	<figcaption>Title slide</figcaption>
 </figure>
 
-For those attending the conference in person we wanted to create a more engaging experience and connect them directly with the map authors on Twitter.  I worked with Justin Miller to create a slideshow with multiple images per map that attendees could enjoy from the comfort of their chairs between talks and on the big screen in the OSGeo booth.  We considered using iMovie or Final Cut but we would have to overlay all of the map info by hand onto the images.  Instead, Justin cooked up an automated process for prepping the images and overlaying all of the text using Imagemagick, a little bit of [shell script](https://github.com/pdxosgeo/foss4g-slideshow/blob/master/test.sh), Node, and Aperture.  I used Sketch to design some additional title and sponsor slides.
+For those attending the conference in person we wanted to create a more engaging experience that showed off the maps while connecting viewers directly with the authors.  Something that attendees could enjoy from the comfort of their chairs between talks and on the big screen in the OSGeo booth.  
+
+We could put this together easy enough in Final Cut, but Justin Miller figured out an automated way of taking the JSON feed and stamping out stylized text onto high-res images using Imagemagick and some [shell script](https://github.com/pdxosgeo/foss4g-slideshow/blob/master/test.sh).  This was then bundled into a slideshow with some title and sponsor slides I designed in Sketch.
 
 <figure>
 	<a href="/images/posts/mapgallery/gallery-video.jpg" target="_window"><img src="/images/posts/mapgallery/gallery-video.jpg"></a>	
 	<figcaption>Map slide with overlays</figcaption>
 </figure>
+
+Overall I think the gallery was a success and people had great things to say.  We had so many more ideas but just didn't have the time to pull them off.  Big thanks to FOSS4G Nottingham for hosting the first map gallery last year and sharing their experiences.
