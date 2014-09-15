@@ -70,7 +70,7 @@ I skipped the virtualenv steps at this point in the docs since I'm working on a 
 
 # Install Server Apps
 
-[http://geonode.readthedocs.org/en/latest/tutorials/admin/install/custom_install.html#custom-install]()
+[http://geonode.readthedocs.org/en/latest/tutorials/admin/install/custom_install.html#custom-install](http://geonode.readthedocs.org/en/latest/tutorials/admin/install/custom_install.html#custom-install)
 
 # Clone and Setup GeoNode
 
