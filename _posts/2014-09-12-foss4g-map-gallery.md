@@ -54,7 +54,7 @@ As an incentive to submit, we offered prizes from Mapbox, CartoDB, and ESRI as w
 
 For those attending the conference in person we wanted to create a more engaging experience that showed off the maps while connecting viewers directly with the authors.  Something that attendees could enjoy from the comfort of their chairs between talks and on the big screen in the OSGeo booth.  
 
-We could put this together easy enough in Final Cut, but Justin Miller figured out an automated way of taking the JSON feed and stamping out stylized text onto high-res images using Imagemagick and some [shell script](https://github.com/pdxosgeo/foss4g-slideshow/blob/master/test.sh).  This was then bundled into a slideshow with using Aperture along some title and sponsor slides I designed in Sketch.  Low-tech at its finest.
+We could put this together easy enough in Final Cut, but Justin Miller figured out an automated way of taking the JSON feed and stamping out stylized text onto high-res images using Imagemagick and some [shell script](https://github.com/pdxosgeo/foss4g-slideshow/blob/master/test.sh).  This was then bundled into a slideshow using Aperture along some title and sponsor slides I designed in Sketch.  Low-tech at its finest.
 
 <figure>
 	<a href="/images/posts/mapgallery/gallery-video.jpg" target="_window"><img src="/images/posts/mapgallery/gallery-video.jpg"></a>	
