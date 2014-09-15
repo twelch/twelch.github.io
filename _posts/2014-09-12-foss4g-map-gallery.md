@@ -61,4 +61,4 @@ We could put this together easy enough in Final Cut, but Justin Miller figured o
 	<figcaption>Map slide with overlays</figcaption>
 </figure>
 
-Overall I think the gallery was a success and people had great things to say.  We had so many more ideas but just didn't have the time to pull them off.  Big thanks to FOSS4G Nottingham for hosting the first map gallery last year and sharing their experiences.
+We had so many more ideas but just didn't have the time to pull them off.  Overall I think the gallery was a success and people had great things to say. Big thanks to Lynnae Sutton, Tanya Haddad, and the gallery judges for contributing their energy and ideas as well as FOSS4G Nottingham for hosting the first map gallery last year and sharing their experiences.
