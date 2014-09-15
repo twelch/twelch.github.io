@@ -52,7 +52,7 @@ As an incentive to submit, we offered prizes from Mapbox, CartoDB, and ESRI for 
 	<figcaption>Title slide</figcaption>
 </figure>
 
-For those attending the conference in person we wanted to create a more engaging experience and connect them directly with the map authors on Twitter.  I worked with Justin Miller to create a slideshow with multiple images per map that attendees could enjoy from the comfort of their chairs between talks and on the big screen in the OSGeo booth.  We considered using iMovie or Final Cut but we would have to overlay all of the map info by hand onto the images.  Instead, Justin cooked up an automated process for prepping the images and overlaying all of the text using Imagemagick, a little bit of shell script, Node, and Aperture.  I used Sketch to design some additional title and sponsor slides.
+For those attending the conference in person we wanted to create a more engaging experience and connect them directly with the map authors on Twitter.  I worked with Justin Miller to create a slideshow with multiple images per map that attendees could enjoy from the comfort of their chairs between talks and on the big screen in the OSGeo booth.  We considered using iMovie or Final Cut but we would have to overlay all of the map info by hand onto the images.  Instead, Justin cooked up an automated process for prepping the images and overlaying all of the text using Imagemagick, a little bit of [shell script](https://github.com/pdxosgeo/foss4g-slideshow/blob/master/test.sh), Node, and Aperture.  I used Sketch to design some additional title and sponsor slides.
 
 <figure>
 	<a href="/images/posts/mapgallery/gallery-video.jpg" target="_window"><img src="/images/posts/mapgallery/gallery-video.jpg"></a>	
