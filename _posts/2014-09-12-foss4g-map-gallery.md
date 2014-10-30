@@ -3,7 +3,7 @@ layout: post
 title: "Curating The FOSS4G Map Gallery"
 description: "From planning to setup to execution"
 category: articles
-tags: [foss4g, map, gallery, php, javascript, python, mobile]
+tags: [project, foss4g, map gallery, wordpress, bootstrap, imagemagick]
 comments: false
 share: true
 ---

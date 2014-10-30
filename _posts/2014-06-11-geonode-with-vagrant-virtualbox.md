@@ -3,7 +3,7 @@ layout: post
 title: "GeoNode Quickstart for Devs with Vagrant"
 description: "Walks through the steps to setup Geonode for development in a Vagrant environment"
 category: articles
-tags: [geonode, boundless, vagrant, virtualbox, postgis, geoserver, pycsw]
+tags: [tutorial, geonode, vagrant, virtualbox]
 comments: false
 share: true
 ---

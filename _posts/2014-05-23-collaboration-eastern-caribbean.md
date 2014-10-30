@@ -4,7 +4,7 @@ title: Data Convergence in the Eastern Caribbean
 description: ""
 modified: 2014-05-26
 category: articles
-tags: [Caribbean, Open data, Geonode, Protected area]
+tags: [project, caribbean, open data, geonode, marine]
 image:
   feature: posts/stlucia-soufriere2.jpg
   credit: Tim Welch, Soufriere, St. Lucia
