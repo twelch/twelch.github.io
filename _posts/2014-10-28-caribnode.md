@@ -17,8 +17,8 @@ This prototype system is now taking form under the name CaribNode and I wanted t
 First and foremost CaribNode is a data catalog, publishing access to aggregate regional datasets, both spatial and non-spatial, in standard forms.  Okay, nothing groundbreaking here...  
 
 <figure>
-	<a href="/images/posts/caribnode/caribnode1small.gif" target="_window"><img src="/images/posts/caribnode/caribnode1small.gif"></a>	
-	<figcaption></figcaption>
+    <a href="/images/posts/caribnode/caribnode1small.gif" target="_window"><img src="/images/posts/caribnode/caribnode1small.gif"></a>  
+    <figcaption></figcaption>
 </figure>
 
 On top of that foundation is the ability to create and plug-in additional tools that take the published data and distill it down into simple and powerful data visualizations that managers at different scales need.
@@ -28,8 +28,8 @@ On top of that foundation is the ability to create and plug-in additional tools 
 The first tool we are creating is the Coral Reef Assessment Tool.  It's being designed to provide information at the regional, national, and the local level providing meaningful information to a variety of management roles in the region.  The information to be presented include a suite of biophysical, socio-economic, and management effectiveness indicators that characterize the status and trends of the marine environment, as well as the protected areas and communities within it.
 
 <figure>
-	<a href="/images/posts/caribnode/caribnode2small.gif" target="_window"><img src="/images/posts/caribnode/caribnode2small.gif"></a>	
-	<figcaption></figcaption>
+    <a href="/images/posts/caribnode/caribnode2small.gif" target="_window"><img src="/images/posts/caribnode/caribnode2small.gif"></a>  
+    <figcaption></figcaption>
 </figure>
 
 # Next Steps
@@ -47,7 +47,6 @@ CaribNode makes use of a variety of modern tools including:
 *   Grunt/Bower - app setup and deployment
 
 Code is available on GitHub at:
-[https://github.com/twelch/caribnode]()
+[https://github.com/twelch/caribnode](https://github.com/twelch/caribnode)
 
 Developers will notice this is a fairly lightweight front-end, opting not to use heavy MVC type libraries.  This is changing, the next release of GeoNode will use AngularJS.
-
