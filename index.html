@@ -1,9 +1,28 @@
 ---
 layout: page
-title: Latest Posts
-description: "Musings and hacks on maps, apps, and the connections between us"
+title: 
+description: "Building apps, maps, and the connections between us"
 tags: [maps, apps, hacks, open source]
 ---
+
+<div class="entry-meta">
+<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
+<span>{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i> &nbsp;&nbsp;&nbsp;@tdoubleuu</a>{% endif %}</span>
+<span>{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="icon-linkedin icon-2x"></i> &nbsp;&nbsp;&nbsp;tim.j.welch</a>{% endif %}</span>
+<span>{% if site.owner.github %}<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="icon-github icon-2x"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.github }}</a>{% endif %}</span>
+<span><a href="mailto:&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="{{ site.owner.name}} by email" target="_blank"><i class="icon-envelope-alt icon-2x"></i> &nbsp;&nbsp;&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;</a></span>
+<span><a href="#" title="{{site.owner.skype}}"><i class="icon-skype icon-2x"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.skype }}</a></span>
+</div>
+
+<p>
+Hi I'm Tim Welch, a freelance consultant in Portland, Oregon.  I create software that is a joy to use.  It gives me great satisfaction to listen to your needs, study your workflows, and work together to develop workable and long-lasting solutions.</p>
+
+<p>Available for consulting both domestic and international.  Equally comfortable leading a team, playing a specialized role, or working solo.  Remote or on-site, office or in the field.  Whatever works best for you.</p>
+
+<p>Have a product or business idea?  Interested in collaborating?  Looking for mentorship?  Let's talk.</p>
+<br/>
+
+<h1 class="entry-title">Latest Posts</h1>
 
 <ul class="post-list">
 {% for post in site.posts limit:10 %} 

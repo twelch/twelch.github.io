@@ -1,14 +1,14 @@
 title:            Dots.Connect
-description:      Musings and hacks on maps, apps, and the connections between us by Tim Welch
+description:      Building apps, maps, and the connections between us
 logo:             logo2d.png
 disqus_shortname: 
-search:           true
+search:           false
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:		   http://twelch.github.io
 
 # Owner/author information
 owner:
-  name:           Tim Welch
+  name:           Dots.Connect
   avatar:         bio1a.png
   email:          tim.j.welch@gmail.com
   # Social networking links used in footer. Update and remove as you like.
@@ -17,6 +17,7 @@ owner:
   github:         twelch
   stackexchange:  
   linkedin:       timjwelch
+  skype:          tim.j.welch
   instagram:      
   flickr:         
   tumblr:         
@@ -38,8 +39,8 @@ links:
     url: /tags/#project
   - title: hacks
     url: /tags/#hack
-  - title: Connect
-    url: /connect/
+  - title: Portfolio
+    url: /portfolio/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
