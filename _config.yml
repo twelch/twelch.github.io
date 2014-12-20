@@ -1,5 +1,5 @@
 title:            Dots.Connect
-description:      Building apps, maps, and the connections between us
+description:      Building the connections between us
 logo:             logo2d.png
 disqus_shortname: 
 search:           false
@@ -9,7 +9,7 @@ url:		   http://twelch.github.io
 # Owner/author information
 owner:
   name:           Dots.Connect
-  avatar:         bio1a.png
+  avatar:         bio1b.jpeg
   email:          tim.j.welch@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        tdoubleuu
@@ -33,14 +33,14 @@ bing_verify: 5FA08EFEFC9BA0775DA9F386E8D1C8C4
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Home
+    url: /
   - title: Articles
     url: /articles/
-  - title: Projects
-    url: /tags/#project
-  - title: hacks
-    url: /tags/#hack
-  - title: Portfolio
-    url: /portfolio/
+  - title: Experience
+    url: /experience/
+  - title: Services
+    url: /services/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles

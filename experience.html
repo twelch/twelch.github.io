@@ -1,0 +1,66 @@
+---
+layout: page
+permalink: /experience/
+title: Experience
+tags: [experience, projects, resume]
+---
+
+<h2>Skills</h2>
+<ul>
+<li>Languages: Python, Javascript and to a lesser extent Java, C++.  Familiarity with many more.</li>
+<li>Databases: PostgreSQL, SQLite, MySQL, Access and to a lesser extent MongoDB</li>
+<li>GIS: Quantum GIS, ESRI ArcGIS Desktop/Server, PostGIS, GDAL, Geoserver/Mapserver, GRASS, and more</li>
+<li>Web map clients: OpenLayers 3, Leaflet, Mapbox.js</li>
+<li>Data visualization: Highcharts, Mapbox Studio, D3.js</li>
+<li>Familiarity with a variety of DevOps frameworks</li>
+</ul>
+
+<h2>Writing and Publications</h2>
+<ul>
+<li>2015 Book Contribution - Ocean Solutions, Earth Solutions from ESRI Press</li>
+<li>2014 White Paper - <a href="https://drive.google.com/file/d/0Bygoj3XHCCwBUW5MVUhoNGhYWHM/view?usp=sharing" title="Delivering Cost Efficiencies for Large Scale Field Survey Programs">Delivering Cost Efficiencies for Large Scale Field Survey Programs]</a></li>
+<li>2013 NatGeo Article - <a href="http://voices.nationalgeographic.com/2013/11/12/mobile-apps-a-path-back-to-traditional-fishing-knowledge/" title="Mobile Apps: A Path Back to Traditional Fishing Knowledge">Mobile Apps: A Path Back to Traditional Fishing Knowledge</a></li>
+</ul>
+
+<h2>Awards and Achievements</h2>
+<ul>
+<li>2014 <a href="http://www.ecotrust.org/press-releases/point-97-wins-esri-design-award/" title="ESRI Special Achievment in GIS Award">ESRI Special Achievment in GIS Award</a> for the West Coast Ocean Data Portal</li>
+<li>2011 <a href="http://thetechawards.thetech.org/the-laureates/stories/1644" title="Intel Environment Aware for MarineMap">Intel Environment Award</a> for MarineMap</li>
+<li>2010 Innovation in Technology and Environmental Conflict Resolution for MarineMap</li>
+<li>2008 Mellon Award for Open OceanMap</li>
+</ul>
+
+<h2>Notable Past Projects</h2>
+<p>Coming Soon</p>
+
+<h2>Recent Projects (by tag)</h2>
+
+<ul class="tag-box inline">
+{% assign tags_list = site.tags %}  
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+        <li><a href="#{{ tag }}">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+        <li><a href="#{{ tag[0] }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+    {% endfor %}
+  {% endif %}
+{% assign tags_list = nil %}
+</ul>
+
+{% for tag in site.tags %} 
+    <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+    <ul class="post-list">
+        {% assign pages_list = tag[1] %}  
+        {% for post in pages_list %}
+            {% if post.title != null %}
+            {% if group == null or group == post.group %}
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
+{% endfor %}
