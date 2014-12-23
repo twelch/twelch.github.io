@@ -18,7 +18,7 @@ tags: [consulting, services]
 * Technical writing and documentation
 * Project and team management
 
-Take a look at some of my [recommendations] on LinkedIn (https://www.linkedin.com/in/timjwelch)
+Take a look at some of my <a href="https://www.linkedin.com/in/timjwelch" title="Recommendations">recommendations</a> on LinkedIn
 
 <h2>Network</h2>
 Looking for a team?  I work with an extensive network of professionals that can provide services complementary to my own including design, software development, engineering, marketing, and communications.
