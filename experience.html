@@ -116,7 +116,7 @@ tags: [experience, projects, resume]
 </ul>
 
 {% for tag in site.tags %} 
-    <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+    <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
     <ul class="post-list">
         {% assign pages_list = tag[1] %}  
         {% for post in pages_list %}
