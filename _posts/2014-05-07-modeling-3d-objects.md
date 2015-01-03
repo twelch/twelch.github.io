@@ -3,7 +3,7 @@ layout: post
 title: "3D Modeling of Real Objects - VisualSFM"
 description: "Using VisualSFM to model real world objects "
 category: articles
-tags: [hack, visualsfm, python, virtualbox]
+tags: [visualsfm, python, virtualbox]
 image:
   feature: posts/visualsfm/monkey-feature.jpg
   credit: Laurel Fan.  Monkey Face

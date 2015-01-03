@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Landslide Data Part 1 - QGIS and GeoJSON"
 description: "Using QGIS to visualize data and put it into the web-friendly GeoJSON format"
 category: articles
-tags: [hack, qgis, geodatabase, geojson, topojson]
+tags: [qgis, geodatabase, geojson, topojson]
 comments: false
 share: true
 ---
