@@ -173,5 +173,3 @@ Over the last few years I've been digging up books on the Columbia River and the
 	<a href="/images/posts/2014dots/astoria8.jpg"><img src="/images/posts/2014dots/astoria8.jpg"></a>
 	<figcaption>Big big sturgeon -- Regatta gillnetter boat races, Astoria</figcaption>
 </figure>
-
-* Interesting [timeline](http://columbiariverimages.com/Regions/Places/canneries_columbia_river.html) of the boom and bust of Columbia River canneries
