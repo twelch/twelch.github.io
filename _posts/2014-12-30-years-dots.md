@@ -51,7 +51,7 @@ Over the last 9 months I've been letting the shape of my consultancy evolve slow
 </figure>
 
 
-I developed software with The Nature Conservancy for monitoring coral reefs in the Eastern Caribbean.  I conducted trainings and webinars.  I did some data viz work for a local video production company.  I started blogging, working on side projects, and talking to people.  Lots of them.  I realized that what I enjoyed about my work is not just the technology.  It's not just the people.  It's weaving the connections between them.  It's seeking out thoughtful uses for technology that doesn't separate us from the natural world and our place in it, but complements it.  I registered the name Dots.Connect in December.  Time for a big push in 2015.
+I developed software with The Nature Conservancy for monitoring coral reefs in the Eastern Caribbean.  I conducted trainings and webinars.  I did some data viz work for a local video production company.  I started blogging, working on side projects, and talking to people.  Lots of them.  I realized that what I enjoyed about my work is not just the technology.  It's not just the people.  It's weaving the connections between them.  It's seeking out thoughtful uses for technology that doesn't separate us from the natural world and our place in it, but complements it.  I changed my business name to Dots.Connect in December.  Time for a big push in 2015.
 
 <figure class="half">
 	<a href="/images/posts/2014dots/dots-plane.jpg"><img src="/images/posts/2014dots/dots-plane.jpg"></a>
