@@ -26,7 +26,7 @@ For 7 years at Ecotrust I took on and navigated different roles from exploring t
 	<figcaption>Typical staff retreat and meeting Vinton Cerf in DC</figcaption>
 </figure>
 
-By the time 2014 rolled around Point 97 had already set sail.  It was long days and lots of travel across the oceans making up 97% of our worlds water.  
+By the time 2014 rolled around Point 97 had already set sail.  It was long days and lots of travel across these oceans of ours.  
 
 <figure class="half">
 	<a href="/images/posts/2014dots/tim-market-training.jpg"><img src="/images/posts/2014dots/tim-market-training.jpg"></a>
