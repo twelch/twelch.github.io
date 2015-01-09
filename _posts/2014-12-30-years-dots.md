@@ -8,7 +8,7 @@ comments: false
 share: true
 ---
 
-Change is the only constant this last year with highs and lows that have given me great pause.  I'm off in uncharted territory and it's time for some self-reflection and connecting the dots.
+Change is the only constant this last year with highs and lows that have given me great pause.  I've been off in uncharted territory for a while now and it's time for some self-reflection and connecting the dots.
 
 # Point 97 and Ecotrust
 
