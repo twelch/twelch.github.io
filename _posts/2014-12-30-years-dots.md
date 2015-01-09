@@ -40,7 +40,7 @@ Late Spring I transitioned to working with Point 97 as a consultant.
 
 # Dots.Connect
 
-I came full circle.  I got back to the heart and soul of the work.  Back to the coding and design.  Back to the people.  I knew now how diverse and capable I was.  My energy and passion returned.
+I came full circle.  I got back to the heart and soul of the work.  Back to the people. Started doing more design and coding.  Doing a little bit of everything, and doing it well because I knew now how diverse and capable I was.  My energy and passion returned.
 
 Over the last 9 months I've been letting the shape of my consultancy evolve slowly.  Would I continue working in the marine space?  Stick to web development?  Embrace more hardware development and prototyping?  Should I just go and get a full-time job?  I knew that I could if I needed to.  Time to test the waters.
 
