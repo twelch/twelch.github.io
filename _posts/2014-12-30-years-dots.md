@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Connecting the Dots of 2014"
-description: "Major events of 2014 and their connections"
+description: ""
 category: articles
 tags: []
 comments: false
