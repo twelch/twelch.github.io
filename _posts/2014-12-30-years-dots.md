@@ -12,7 +12,7 @@ Change is the only constant this last year with highs and lows that have given m
 
 # Point 97 and Ecotrust
 
-For 7 years at Ecotrust I took on and navigated different roles from exploring the deepest depths of the code mines to inspiring teams and clients to execute on grand visions of open source software.  Together we produced a body of work that allowed a team of us to spin-off a for-profit marine consulting company, Point 97.  It was a risk but we took the plunge.
+For 7 years at Ecotrust I took on and navigated different roles from exploring the deepest depths of the code mines to inspiring teams and clients to execute on grand visions of open source software.  Together we built a foundation that allowed a team of us to spin-off a for-profit marine consulting company, Point 97.  It was a risk but we took the plunge.
 
 <figure class="half">
 	<a href="/images/posts/2014dots/djc_Madrona_Software.jpg"><img src="/images/posts/2014dots/djc_Madrona_Software.jpg"></a>
