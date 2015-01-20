@@ -10,11 +10,11 @@ share: true
 
 In my [first post](/articles/collaboration-eastern-caribbean/) I described the increasingly crowded landscape of online geospatial systems in the Eastern Caribbean, and my plans to join the fray to design a GeoNode-based system for The Nature Conservancy in partnership with 6 participating Eastern Caribbean countries: Antigua and Barbuda, Dominica, Grenada, Saint Kitts and Nevis, Saint Lucia, and Saint Vincent and the Grenadines.
 
-This prototype system is now taking form under the name CaribNode and I wanted to show off a little bit of what it can do.  We're taking a lean approach to this system and working to capture some value right away for the intended users before a lot of time and resources are spent building it out further.
+[CaribNode](http://caribnode.org) has now been released and I wanted to show off a little bit of what it can do.  We're taking a lean approach to this system and working to capture some value right away for the intended users before a lot of time and resources are spent building it out further.
 
 # What It Can Do
 
-First and foremost CaribNode is a data catalog, publishing access to aggregate regional datasets, both spatial and non-spatial, in standard forms.  Okay, nothing groundbreaking here...  
+First and foremost CaribNode is a data discovery tool, publishing access to aggregate regional datasets, both spatial and non-spatial, in standard forms.  Okay, nothing groundbreaking here...  
 
 <figure>
     <a href="/images/posts/caribnode/caribnode1small.gif" target="_window"><img src="/images/posts/caribnode/caribnode1small.gif"></a>  
