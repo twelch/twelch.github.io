@@ -4,7 +4,7 @@ title: "Visualizing Landslide Data Part 2 - Tilemill 2 and Vector Tiles"
 description: "Using Tilemill 2 and Mapbox street and terrain vector tile layers to visualize landslide data"
 category: articles
 tags: [tilemill, mapbox studio, qgis, geology]
-comments: false
+comments: true
 share: true
 ---
 

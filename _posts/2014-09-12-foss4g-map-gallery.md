@@ -4,7 +4,7 @@ title: "Curating The FOSS4G Map Gallery"
 description: "From planning to setup to execution"
 category: articles
 tags: [project, foss4g, map gallery, wordpress, bootstrap, imagemagick]
-comments: false
+comments: true
 share: true
 ---
 

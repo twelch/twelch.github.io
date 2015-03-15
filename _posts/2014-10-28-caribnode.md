@@ -4,7 +4,7 @@ title: "Reef Assessment in the Eastern Caribbean"
 description: "Developing tools for coral reef monitoring and evaluation at multiple scales in the Eastern Caribbean"
 category: articles
 tags: [project, dataviz, geonode, openlayers 3, underscore, papaparse]
-comments: false
+comments: true
 share: true
 ---
 

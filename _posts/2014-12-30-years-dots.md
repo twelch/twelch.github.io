@@ -4,7 +4,7 @@ title: "Connecting the Dots of 2014"
 description: ""
 category: articles
 tags: []
-comments: false
+comments: true
 share: true
 ---
 

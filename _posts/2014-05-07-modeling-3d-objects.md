@@ -8,7 +8,7 @@ image:
   feature: posts/visualsfm/monkey-feature.jpg
   credit: Laurel Fan.  Monkey Face
   creditlink: https://www.flickr.com/photos/laurelfan/304376867/in/photolist-sU1D2-2V6M7s-2V6N2Y-2V2obK-2V2oqi-6ZVejj-4x5ULw-6ZRf22-6ZRfoV-7YNdD-c7u4iG-c7u2NN-c7u37G-c7u3Ub-4x5UJA-4x5UsJ-4x1Jsc-4x5UGS-4x5UmL-4x5UAA-4x1K3K-4uB3dK-4uB3f6-4x1JFX-4x5UQb-4x5Ue9-4x1K1T-4x1L7i-4x5Uwu-4x1Joi-4x5U4o-4x1Jhv-4x5UbG-4x1KpB-4x1KCM-4x1Kig-4x1KmZ-4x5Vh7-4x5V8A-4x5V3o-4x5VdE-4x5Vbj-4x1JmM-4x5UgE-6r3pNq-6ZReJ4-4x1L2t-4x1KkR-2V2mZr-4uB3kc
-comments: false
+comments: true
 share: true
 ---
 

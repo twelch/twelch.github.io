@@ -4,7 +4,7 @@ title: "Mobile Field Data Collection Workshop"
 description: "Solution for offline mobile data collection in the field"
 category: articles
 tags: [mobile, ios, android, fisheries, data collection]
-comments: false
+comments: true
 share: true
 ---
 
