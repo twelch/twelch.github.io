@@ -28,4 +28,6 @@ Hi I'm Tim Welch founder of Dots.Connect, building technology solutions out of P
 {% for post in site.posts limit:10 %} 
   <li><article><a class='title' href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
 {% endfor %}
+<br/>
+<a href="/articles" title="Articles">View all posts</a>
 </ul>
