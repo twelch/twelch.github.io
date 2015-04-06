@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Visualizing Landslide Data Part 2 - Tilemill 2 and Vector Tiles"
+title: "Visualizing Landslide Data Part 2 - Mapbox and Vector Tiles"
 description: "Using Tilemill 2 and Mapbox street and terrain vector tile layers to visualize landslide data"
 category: articles
 tags: [tilemill, mapbox studio, qgis, geology]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-I've been test-driving Tilemill 2 off and on over the last couple of weeks and it's been a lot of fun.  The new Mapnik Vector Tiles support in TM2 is truly game-changing, allowing you to apply custom cartography to Mapbox basemaps and quickly mix and match them with your own data layers in ways just not possible with other commercial basemaps.  
+I've been test-driving Tilemill 2 (aka Mapbox Studio) off and on over the last couple of weeks and it's been a lot of fun.  The new Mapnik Vector Tiles support in TM2 is truly game-changing, allowing you to apply custom cartography to Mapbox basemaps and quickly mix and match them with your own data layers in ways just not possible with other commercial basemaps.  
 
 For my test run I decided to use Tilemill 2 to improve on a [landslide web map](http://www.oregongeology.org/slido/index.html) published by the state of Oregon using ArcGIS Server.  Here's their existing map:
 

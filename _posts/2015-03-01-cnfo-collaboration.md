@@ -4,7 +4,7 @@ title: Engaging Fisherfolk in the Caribbean
 description: ""
 modified: 2015-03-25
 category: articles
-tags: [project, caribbean, engagement, fisherfolk, assessment, usability]
+tags: [project, caribbean, engagement, fisherfolk, livelihood, assessment, usability]
 image:
   feature: posts/cnfo/soufriere.jpg
   credit: Tim Welch, Soufriere, St. Lucia
