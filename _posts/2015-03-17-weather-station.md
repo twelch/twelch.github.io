@@ -30,7 +30,7 @@ Thingspeak made it easy to setup a new channel to receive the sensor events for 
 
 # App Design
 
-I then took some time to study the the aggregation features that the Thingspeak API provided and tested out the C3.js charting library.  I then put together a preliminary UI design with responsive mobile and dashboard views.
+I was just about ready to design the UI, but first I took some time to study the the aggregation features of the Thingspeak API as well as test out the C3.js charting library.  Confident of what these tools could do I found a deep space themed [palette](https://www.tumblr.com/search/space%20palette) and sketched out a UI design.
 
 <figure class="half">
   <a href="/images/posts/weatherstation/ui.gif"><img src="/images/posts/weatherstation/ui.gif"></a>
@@ -39,7 +39,7 @@ I then took some time to study the the aggregation features that the Thingspeak 
 
 # App Development
 
-With the groundwork laid I'm moving forward with developing the dashboard prototype.  In addition to some tried and true front-end tools I wanted to incorporate some new ones.  The final list includes:
+With the groundwork now laid I'm slowly moving forward with the prototype in my spare time.  I'm going to incorporate a variety of front-end tools including:
 
 * Bower
 * Gulp
