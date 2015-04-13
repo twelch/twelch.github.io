@@ -7,7 +7,7 @@ tags: [consulting, services]
 
 <p>I provide a full suite of services from conception to reality, the entire project life cycle. </p>
 * Needs assessment
-* UX design
+* UX/UI design ()
 * Software architecture and prototyping
 * Data collection and analysis
 * Server setup
@@ -21,4 +21,4 @@ tags: [consulting, services]
 Take a look at some of my <a href="https://www.linkedin.com/in/timjwelch" title="Recommendations">recommendations</a> on LinkedIn
 
 <h2>Network</h2>
-Looking for a team?  I work with an extensive network of professionals that can provide services complementary to my own including design, software development, engineering, marketing, and communications.
+Looking for a team?  I work with an extensive network of professionals that can provide services complementary to my own including graphic design, illustration, software development, engineering, marketing, and communications.
