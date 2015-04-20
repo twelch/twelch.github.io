@@ -4407,6 +4407,10 @@ span + .entry-title {
   margin-top: 0;
 }
 
+.entry-title.home {
+  margin-top: 100px;
+}
+
 .entry-title {
   font-family: 'volkhov', serif;
   font-size: 36px;
