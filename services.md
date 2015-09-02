@@ -7,7 +7,7 @@ tags: [consulting, services]
 
 <p>I provide a full suite of services from conception to reality, the entire project life cycle. </p>
 * Needs assessment
-* UX/UI design ()
+* UX/UI design
 * Software architecture and prototyping
 * Data collection and analysis
 * Server setup

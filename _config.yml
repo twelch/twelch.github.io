@@ -38,10 +38,10 @@ links:
     url: /
   - title: Articles
     url: /articles/
-  - title: Experience
-    url: /experience/
   - title: Services
     url: /services/
+  - title: Experience
+    url: /experience/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
