@@ -35,7 +35,7 @@ I hope you enjoy and read on for some of my workflow details.
 
 # The Blank Canvas
 
-In Mapbox Studio your blank canvas will often be one of their pre-styled global street maps lovingly extracted from OpenStreetMap by the Mapbox team.  I chose the light basemap to focus the viewer on the data I was going to layer on top.  I then made the background color a little warmer and toggled off the display of any unnecessary layers including buildings and most labeling.  Studio has a nice feature where you can click any feature on the map and jump right into editing its style.  This is expected in graphic design software, but a global basemap?  This is a pretty big leap forward.
+In Mapbox Studio your blank canvas will often be one of the pre-styled global street maps lovingly extracted from OpenStreetMap by the Mapbox team.  I chose the light basemap to focus the viewer on the data I was going to layer on top.  I then made the background color a little warmer and toggled off the display of any unnecessary layers including buildings and most labeling.  Studio has a nice feature where you can click any feature on the map and jump right into editing its style.  This is expected in graphic design software, but a global basemap?  This is a pretty big leap forward.
 
 <figure>
     <a href="/images/posts/joyofmap/stylemenu.jpg"><img src="/images/posts/joyofmap/stylemenu.jpg"></a>
