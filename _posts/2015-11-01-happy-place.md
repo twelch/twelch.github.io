@@ -74,7 +74,9 @@ I found all of the data I needed at Portland's [civicapps.org](http://civicapps.
 
 # The Polish
 
-To finish the map off I added some linework for squirrel paths.  These styled semi-transparent, maybe only 20% opacity, so that where multiple paths overlapped there would be more intense color, signifying you know higher density squirrel traffic ;)  I added in some clouds that vary in size based on their size attribute. The clouds also appear and disappear as you zoom in and out giving a more interactive feel.  Completely for show but an interesting touch I think that takes interactive maps to another level.
+To finish the map off I added some linework for squirrel paths.  These styled semi-transparent, maybe only 20% opacity, so that where multiple paths overlapped there would be more intense color, signifying you know higher density squirrel traffic ;)  
+
+I also added in some clouds that vary in size based on their size attribute. The clouds also appear and disappear as you zoom in and out giving a more interactive feel.  Completely for show but an interesting touch I think that takes interactive maps to another level.
 
 <figure>
     <a href="/images/posts/joyofmap/clouds.jpg"><img src="/images/posts/joyofmap/clouds.jpg"></a>
@@ -86,11 +88,11 @@ But wait we're not done yet.  Once the map style is published we've just gotten 
 
 With just a few more steps you can then publish this little app prototype on the web using the [Firebase static hosting service](https://www.firebase.com/docs/hosting/).  The interactive map above is my published map that I put into an iframe.
 
-I'm currently working on taking the app example further, creating a production-ready starter project using the GL JS library, React, and webpack.  This will be forthcoming.
+There's much more you can do with the GL JS library including interacting with map features, filtering and restyling layers on-the-fly, tilting and rotating the map, and more.  I'm currently working on a production-ready starter project using the GL JS library, React, and webpack.  Keep an eye on the Github repository for more.
 
 # Wrap
 
-So that's it, I hoped you enjoyed getting a glimpse into the overall process and not just the map design.  Until next time.
+So that's it, I hope you enjoyed getting a glimpse into one possible workflow.  I have high hopes for this software stack and look forward to publishing some production apps in the coming months.  Until next time.
 
 <figure>
     <a href="/images/posts/joyofmap/wave.gif"><img src="/images/posts/joyofmap/wave.gif"></a>
