@@ -69,7 +69,6 @@ I found all of the data I needed at Portland's [civicapps.org](http://civicapps.
 
 <figure>
     <a href="/images/posts/joyofmap/qgis.jpg"><img src="/images/posts/joyofmap/qgis.jpg"></a>
-    <figcaption>Importing into Studio</figcaption>
 </figure>
 
 # The Polish
