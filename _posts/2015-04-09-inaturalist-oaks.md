@@ -7,7 +7,7 @@ category: articles
 tags: [inaturalist, mobile, botany, pie]
 image:
   feature: posts/inat1/flower.jpg
-  credit: Tim Welch, Surveyor Training @ Ministry of Fisheries, Solomon Islands
+  credit: Tim Welch, Oaks Bottom Wildlife Refuge
 comments: true
 share: true
 ---
