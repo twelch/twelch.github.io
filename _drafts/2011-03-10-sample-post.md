@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Sample Post
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2013-05-31
-category: articles
-tags: [sample post]
+excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+modified: 2016-06-01T14:17:25-04:00
+categories: articles
+tags: [sample-post]
 image:
   feature: so-simple-sample-image-1.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 comments: true
 share: true
 ---
@@ -68,22 +68,22 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
 |=====
-| Foot1   | Foot2   | Foot3
-{: rules="groups"}
+| Foot1   | Foot2   | Foot3   |
+{: .table}
 
 ## Code Snippets
 
-Syntax highlighting via Pygments
+Syntax highlighting via Rouge
 
-{% highlight css %}
+```css
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-{% endhighlight %}
+```
 
-Non Pygments code example
+Non Rouge code example
 
     <div id="awesome">
         <p>This is great isn't it?</p>

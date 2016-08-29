@@ -1,34 +1,35 @@
 ---
 layout: post
 title: Syntax Highlighting Post
-description: "Demo post displaying the various ways of highlighting code in Markdown."
-category: articles
-tags: [sample post, code, highlighting]
+excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
+categories: articles
+tags: [sample-post, code, highlighting]
 image:
   feature: so-simple-sample-image-5.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 comments: true
 share: true
+modified: 2016-06-01T14:11:53-04:00
 ---
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
 [^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
-### Pygments Code Blocks
+### Highlighted Code Blocks
 
-To modify styling and highlight colors edit `/assets/less/pygments.less` and compile `main.less` with your favorite preprocessor. Or edit `main.css` if that's your thing, the classes you want to modify all begin with `.highlight`.
+To modify styling and highlight colors edit `/_sass/_syntax.scss`.
 
-{% highlight css %}
+```css
 #container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
 }
-{% endhighlight %}
+```
 
-{% highlight html %}
+```html
 {% raw %}
 <nav class="pagination" role="navigation">
     {% if page.previous %}
@@ -39,9 +40,9 @@ To modify styling and highlight colors edit `/assets/less/pygments.less` and com
     {% endif %}
 </nav><!-- /.pagination -->
 {% endraw %}
-{% endhighlight %}
+```
 
-{% highlight ruby %}
+```ruby
 module Jekyll
   class TagIndex < Page
     def initialize(site, base, dir, tag)
@@ -59,8 +60,7 @@ module Jekyll
     end
   end
 end
-{% endhighlight %}
-
+```
 
 ### Standard Code Block
 
@@ -77,8 +77,6 @@ end
 
 
 ### Fenced Code Blocks
-
-To modify styling and highlight colors edit `/assets/less/coderay.less` and compile `main.less` with your favorite preprocessor. Or edit `main.css` if that's your thing, the classes you want to modify all begin with `.coderay`. Line numbers and a few other things can be modified in `_config.yml` under `coderay`.
 
 ~~~ css
 #container {

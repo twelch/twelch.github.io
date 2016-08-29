@@ -1,33 +1,35 @@
 ---
 layout: page
 title: 
-description: "Building the connections between us"
-tags: [maps, apps, hacks, open source]
+excerpt: "A simple and clean responsive Jekyll theme for words and photos."
+search_omit: true
 ---
 
-<div class="entry-meta">
-<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
-<span>{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i> &nbsp;&nbsp;&nbsp;@tdoubleuu</a>{% endif %}</span>
-<span>{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="icon-linkedin icon-2x"></i> &nbsp;&nbsp;&nbsp;tim.j.welch</a>{% endif %}</span>
-<span>{% if site.owner.github %}<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="icon-github icon-2x"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.github }}</a>{% endif %}</span>
-<span><a href="mailto:&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="{{ site.owner.name}} by email" target="_blank"><i class="icon-envelope-alt icon-2x"></i> &nbsp;&nbsp;&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;</a></span>
-<span><a href="skype:tim.j.welch?chat&topic=Hello" title="{{site.owner.skype}}"><i class="icon-skype icon-2x"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.skype }}</a></span>
-</div>
+<footer class="entry-meta">
+  <img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="bio-photo" alt="{{ site.owner.name }} bio photo">
+  <span>{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></i> &nbsp;&nbsp;&nbsp;@tdoubleuu</a>{% endif %}</span>
+  <span>{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i> &nbsp;&nbsp;&nbsp;tim.j.welch</a>{% endif %}</span>
+  <span>{% if site.owner.github %}<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-2x fa-github-square"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.github }}</a>{% endif %}</span>
+  <span><a href="mailto:&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="{{ site.owner.name}} by email" target="_blank"><i class="fa fa-2x fa-envelope-square"></i> &nbsp;&nbsp;&#116;&#105;&#109;&#046;&#106;&#046;&#119;&#101;&#108;&#099;&#104;</a></span>
+  <span><a href="skype:tim.j.welch?chat&topic=Hello" title="{{site.owner.skype}}"><i class="fa fa-2x fa-skype"></i> &nbsp;&nbsp;&nbsp;{{ site.owner.skype }}</a></span>
+</footer>
 
 <p>
-Hi I'm Tim Welch. I craft technology solutions and create value for clients around the world.  Web apps, mobile, mapping, data visualization, and sensors are just a few of the tools of the trade.  I work across disciplines and industries, thriving in the space where people and technology collide.  I connect the dots, and I can do it for you.
+Hi I'm Tim Welch. I craft technology solutions and create value for clients around the world.  Web apps, design, mobile, mapping, data visualization, and sensors are just a few of the tools of the trade.  I work across disciplines and industries, thriving in the space where people and technology collide.  I connect the dots and I can do it for you.
 </p>
 
-<p>Do you have a compelling project or product opportunity? Looking for ideas or mentorship?  Let's talk.</p>
+<p>Do you need help on a project or product? Looking for ideas, collaborators, mentorship?  Let's talk!</p>
 
 <p>Learn more about my <a href="/experience" title="Experience">experience</a> and the <a href="/services" title="Services">services</a> that I offer.</p>
 
+<br/>
+<br/><br/>
 <h1 class="entry-title home">Latest Posts</h1>
 
 <ul class="post-list">
-{% for post in site.posts limit:10 %} 
+{% for post in site.posts limit:10 %}
   <li><article><a class='title' href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
 {% endfor %}
+</ul>
 <br/>
 <a href="/articles" title="Articles">View all posts</a>
-</ul>

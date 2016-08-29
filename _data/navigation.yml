@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Articles
+  url: /articles/
+
+- title: Services
+  url: /services/
+
+- title: Experience
+  url: /experience/
+
+- title: Search
+  url: /search/

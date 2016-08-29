@@ -1,70 +1,60 @@
-title:            Dots.Connect
-alttitle:         Dots Connect
-description:      
-logo:             logo.jpg
-disqus_shortname: 
-search:           false
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:		   http://dotsconnect.us
+# Site wide configuration
 
-# Owner/author information
-owner:
-  name:           Dots.Connect
-  avatar:         bio1b.jpeg
-  email:          tim.j.welch@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        tdoubleuu
-  facebook:       
-  github:         twelch
-  stackexchange:  
-  linkedin:       timjwelch
-  skype:          tim.j.welch
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+title: 
+locale: en_US
+description: 
+logo: dc-logo-color.png
+search: false
+url: http://dotsconnect.us
 
-# Analytics and webmaster tools stuff goes here
-google_analytics: UA-50551462-1
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify: 5FA08EFEFC9BA0775DA9F386E8D1C8C4        
+# Jekyll configuration
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: Articles
-    url: /articles/
-  - title: Services
-    url: /services/
-  - title: Experience
-    url: /experience/
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Los_Angeles
-future:      true
-highlighter: pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+  toc_levels: 1..2
+  enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+mathjax: true
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Tim Welch
+  avatar: bio1b.jpeg
+  email: tim.j.welch@gmail.com
+  disqus-shortname:
+  twitter: tdoubleuu
+  facebook: #username
+  github: twelch
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: timjwelch
+  instagram: dotsconnect
+  skype: tim.j.welch
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics: UA-50551462-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify: 5FA08EFEFC9BA0775DA9F386E8D1C8C4

@@ -3,6 +3,7 @@ layout: page
 permalink: /services/
 title: Services
 tags: [consulting, services]
+search_omit: true
 ---
 
 <p>I provide a full suite of services from conception to reality, the entire project life cycle. </p>
