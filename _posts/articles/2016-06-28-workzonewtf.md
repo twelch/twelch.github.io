@@ -11,7 +11,7 @@ comments: true
 share: true
 ---
 
-TL;DR - with social media you can quickly crowdsource the extent of a municipal issue and help move the needle on policy change.  Here's how we did it.
+TL;DR - Using social media, a small group of us were quickly able to crowdsource the breadth and depth of a persistent city-wide issue and present that information to move the needle on policy change.  Here's how we did it.
 
 I was surprised to learn how many active construction zones there were in Portland.  When members of Oregon Walks and the Oregon Bicycle Transportation Alliance told me that many of these work zones had closed bike lanes and sidewalks unnecessarily, creating unsafe conditions, I didn't quite believe it.  So they showed me, and it was right in front of my eyes, I just wasn't paying attention.  
 
