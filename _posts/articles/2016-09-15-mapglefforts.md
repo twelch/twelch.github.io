@@ -4,7 +4,7 @@ title: A Year With Mapbox GL
 description: making the switch to Mapbox GL in app dev
 modified: 2016-09-15
 category: articles
-tags: [mapbox, react, animation]
+tags: [mapbox, react, animation, storytelling]
 comments: false
 share: true
 ---
