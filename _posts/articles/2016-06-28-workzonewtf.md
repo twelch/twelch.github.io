@@ -11,18 +11,23 @@ comments: true
 share: true
 ---
 
-TL;DR - Using social media, a small group of us were quickly able to crowdsource the breadth and depth of a persistent city-wide issue and present that information to move the needle on policy change.  Here's how we did it.
+Right now there are dozens of road closures impacting the pedestrian and bike networks in and around the boom town that is Portland.  They range from unnecessary inconveniences to downright dangerous, and they all are easily preventable.  
 
-I was surprised to learn how many active construction zones there were in Portland.  When members of Oregon Walks and the Oregon Bicycle Transportation Alliance told me that many of these work zones had closed bike lanes and sidewalks unnecessarily, creating unsafe conditions, I didn't quite believe it.  So they showed me, and it was right in front of my eyes, I just wasn't paying attention.  
+<figure class="third">
+  <div class='twidget'>
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/workzoneWTF?src=hash">#workzoneWTF</a> About 5100 block on SW Barbur northbound. Posted 45mph.  This was today 4/19/2015. No bike lane detour. <a href="https://t.co/NvuZ7FuvHU">pic.twitter.com/NvuZ7FuvHU</a></p>&mdash; Seth D. Alford (@setha45) <a href="https://twitter.com/setha45/status/722477768340996096">April 19, 2016</a></blockquote>
+  </div>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</figure>
 
-Apparently the city wasn't either so these two organizations wanted to crowdsource evidence in time for the city council to review new workzone rules in 3 months. I wanted to help.
+Yet, local transportation agencies and developers weren't convinced it was a big issue so a small group of us set out to capture just how bad things have gotten and push for the policy changes needed to address it.  We ran a short social media campaign over three months and with a little tech sauce we whipped up, we were able to aggregate hundreds of photo tweets from some dedicated individuals and submit them to City Hall as part of a proposed resolution to work zone closure requirements.  The resolution passed unanimously at the end of June!  Here's how we did it.
 
-We hatched a plan for a 3-month campaign with a little secret tech sauce whipped up that:
+Oregon Walks and the Bicycle Transportation Alliance approached me with the social media campaign idea and I hatched a plan for a tech workflow that would:
 
-- Made it simple for people to contribute (Twitter/Instagram hashtag + image + location)
-- Collected contributions for review and approval (Zapier, Google Sheets, Google Apps Script)
-- Published approved contributions through a central website (Jekyll/Github Pages, Tabletop.JS, Mapbox GL JS)
-- Built entirely on free or low cost services
+- Make it simple for people to contribute images via Twitter and Instragram
+- Collect contributions for review and approval (Zapier, Google Sheets, Google Apps Script)
+- Publish approved contributions through a central website (Jekyll/Github Pages, Tabletop.JS, Mapbox GL JS)
+- Be built entirely on free or low cost services
 
 <figure>
   <a href="/images/posts/workzonewtf/workflow.jpg"><img style="margin: 0 auto; width:400px" src="/images/posts/workzonewtf/workflow.jpg"></a>
@@ -67,9 +72,6 @@ Over time a wide swath of safety and accessibility issues were shared covering e
 <figure class="third">
   <div class='twidget'>
     <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/sidewalkends?src=hash">#sidewalkends</a> <a href="https://twitter.com/hashtag/workzoneWTF?src=hash">#workzoneWTF</a> <a href="https://twitter.com/OregonWalks">@OregonWalks</a> <a href="https://t.co/hplgDCXdOJ">pic.twitter.com/hplgDCXdOJ</a></p>&mdash; Kari Schlosshauer (@galavantista) <a href="https://twitter.com/galavantista/status/725522059485286400">April 28, 2016</a></blockquote>
-  </div>
-  <div class='twidget'>
-    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/workzoneWTF?src=hash">#workzoneWTF</a> About 5100 block on SW Barbur northbound. Posted 45mph.  This was today 4/19/2015. No bike lane detour. <a href="https://t.co/NvuZ7FuvHU">pic.twitter.com/NvuZ7FuvHU</a></p>&mdash; Seth D. Alford (@setha45) <a href="https://twitter.com/setha45/status/722477768340996096">April 19, 2016</a></blockquote>
   </div>
   <div class='twidget'>  
     <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">PBOT has both sidewalks on SE 11th closed at Caruthers. <a href="https://twitter.com/hashtag/WorkZoneWTF?src=hash">#WorkZoneWTF</a> <a href="https://t.co/VTmrAbkycC">pic.twitter.com/VTmrAbkycC</a></p>&mdash; Carl Larson (@LilBikesBigFun) <a href="https://twitter.com/LilBikesBigFun/status/742446668478484481">June 13, 2016</a></blockquote>
