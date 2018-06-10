@@ -181,6 +181,19 @@ span + .entry-title {
 			border-bottom-style: solid;
 		}
 	}
+
+	.entry-partners {
+		margin-top: 140px;
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		& img {
+			padding-right: 30px;
+			width: 550px;
+		}
+	}
 }
 
 /*
