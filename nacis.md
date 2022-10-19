@@ -23,6 +23,6 @@ I'd love to hear what you find or think or want me to know about all this.  <a h
 <ul>
 <li>Map - <a href='/files/NacisDepot.pdf'>PDF</a>, free to share, not for commercial use</li>
 <p>Work in progress - check back soon!</p>
-<li><a href='/articles/milwaukeeroad/'>Article [work in progress]</a></li>
+<li><a href='/articles/footsteps/'>Article [work in progress]</a></li>
 <li>Interactive Map [work in progress] </a></li>
 </ul>
