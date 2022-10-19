@@ -6,7 +6,7 @@ tags: [map]
 search_omit: true
 ---
 
-<p>My gift to NACIS attendees in 2022 is a postcard size map.  It's focused on and around the Milwaukee Road Train Depot in Minneapolis, where the conference is being held.  Maybe I even gave you a map in-persion and you followed the link here?  Or perhaps you just stumbled upon this.  Either way, welcome.
+<p>My gift to NACIS attendees in 2022 is a postcard size map.  It's focused on and around the Milwaukee Road Train Depot in Minneapolis, where the conference is being held.
 </p>
 
 <figure class="half">
@@ -14,14 +14,17 @@ search_omit: true
     <figcaption></figcaption>
 </figure>
 
-<p>And I have a little something more for you.  The map in digital form, free to share or print for personal use.  An article delving into my process and further archive links.  And a simple interactive version of the map.  There isn't much rail infrastructure left in downtown Minneapolis, you'll have to use your imagination, and hope to stumble on some signs of what once was.
+<p>The map is available below for print.  An <a href='/articles/footsteps/'>article</a> is available with the story behind the map with links to sources.  This will evolve as I attend the conference and finally explore this place physically for the first time.
+</p>
 
-I'd love to hear what you find or think or want me to know about all this.  <a href='/'>Contact me</a> anytime.
+<p>I'm expecting that there isn't much of the rail infrastructure left! So I'll be using my imagination and looking for signs and hints of what was before.  I really love doing this.
+
+Please, let me know what you find or think or want me to know about all of this.  Disclaimer, I'm an admirer more than an expert! <a href='/'>Contact me</a> anytime.
 
 <p>-- Tim</p>
 
 <ul>
-<li>Map - <a href='/files/NacisDepot.pdf'>PDF</a>, free to share, not for commercial use</li>
-<li><a href='/articles/footsteps/'>Article [work in progress]</a></li>
+<li><a href='/files/NacisDepot.pdf'>Map</a> - free to share, not for commercial use</li>
+<li><a href='/articles/footsteps/'>Article</a></li>
 <li>Interactive Map [work in progress] </a></li>
 </ul>
