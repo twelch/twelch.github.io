@@ -26,5 +26,5 @@ Please, let me know what you find or think or want me to know about all of this.
 <ul>
 <li><a href='/files/NacisDepot.pdf'>Map</a> - free to share, not for commercial use</li>
 <li><a href='/articles/footsteps/'>Article</a></li>
-<li>Interactive Map [work in progress] </a></li>
+<li>Interactive Map [work in progress]</li>
 </ul>
