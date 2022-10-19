@@ -17,7 +17,7 @@ search_omit: true
 <p>The map is available below for print.  An <a href='/articles/footsteps/'>article</a> is available with the story behind the map with links to sources.  This will evolve as I attend the conference and finally explore this place physically for the first time.
 </p>
 
-<p>I'm expecting that there isn't much of the rail infrastructure left! So I'll be using my imagination and looking for signs and hints of what was before.  I really love doing this.
+<p>I'm expecting that there isn't much of the rail infrastructure left in downtown Minneapolis! Times change.  So I'll be using my imagination and looking for signs and hints of what was before.  I really love doing this.
 
 Please, let me know what you find or think or want me to know about all of this.  Disclaimer, I'm an admirer more than an expert! <a href='/'>Contact me</a> anytime.
 
