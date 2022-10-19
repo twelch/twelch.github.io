@@ -14,7 +14,7 @@ search_omit: true
     <figcaption></figcaption>
 </figure>
 
-<p>And I have a little something more for you.  The map in digital form, free to share or print for personal use.  An article delving into my process and further archive links.  And a simple interactive version of the map.  Because tjere isn't muc rail infrastructure left in downtown Minneapolis, you'll have to use your imagination and hope to stumble on some signs of what once was.
+<p>And I have a little something more for you.  The map in digital form, free to share or print for personal use.  An article delving into my process and further archive links.  And a simple interactive version of the map.  There isn't much rail infrastructure left in downtown Minneapolis, you'll have to use your imagination, and hope to stumble on some signs of what once was.
 
 I'd love to hear what you find or think or want me to know about all this.  <a href='/'>Contact me</a> anytime.
 
