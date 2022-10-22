@@ -14,7 +14,7 @@ search_omit: true
     <figcaption></figcaption>
 </figure>
 
-<p>Version 2 of the map is now available for <a href='/files/NacisDepotV2.pdf'>print</a>, along with an article exploring my process and what I discovered with links to sources.
+<p>Version 2 of the map is now available for <a href='/files/NacisDepotV2.pdf'>print</a>, along with an ><a href='/articles/footsteps/'>article</a> exploring my process with links to sources.
 </p>
 
 <p>It's really interesting to have made the map first and then visit the place physically and walk some of these paths, matching it with the mental picture I had formed.  Version 2 of the map includes some corrections that came out of that.  There isn't much rail infrastructure left in downtown Minneapolis! Times change.  But having the map helped me anticipate and tune into lingering signs and hints of what was before.  I really love doing this.
