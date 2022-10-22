@@ -10,7 +10,7 @@ search_omit: true
 </p>
 
 <figure class="half">
-    <a href="/files/NacisDepot.png"><img src="/files/NacisDepotV2.png"></a>
+    <a href="/files/NacisDepotv2.png"><img src="/files/NacisDepotV2.png"></a>
     <figcaption></figcaption>
 </figure>
 
