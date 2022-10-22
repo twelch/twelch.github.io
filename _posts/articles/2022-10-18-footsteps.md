@@ -16,7 +16,7 @@ The Milwaukee Road rail line had a long history in Minnesota.  It's official nam
 The Milwaukee Road Depot is just one train station on that line, and was itself a convergence for multiple train lines.   The Depot also happens to be the host of the NACIS conference this year.  This inspired me to create a map that dug deeper into this rail-focused past.
 
 <figure class="half">
-    <a href="/files/NacisDepot.png"><img src="/files/NacisDepot.png"></a>
+    <a href="/files/NacisDepotV2.png"><img src="/files/NacisDepotV2.png"></a>
     <figcaption></figcaption>
 </figure>
 [Map Download](/nacis)
