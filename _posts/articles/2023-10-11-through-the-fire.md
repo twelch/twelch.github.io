@@ -26,6 +26,11 @@ Hints of these transitions can be seen in the density of rail, building footprin
     <figcaption></figcaption>
 </figure>
 
+<figure class="half">
+    <a href="/files/key.png"><img src="/files/key.png"></a>
+    <figcaption></figcaption>
+</figure>
+
 ## Cartographer's Notes
 
 I love making small maps, and really had to challenge myself to pull this idea together.  There is so much detail in the sources that it became more of an exercise in taking away than adding.
