@@ -9,13 +9,23 @@ comments: false
 share: true
 ---
 
-Through the Fire is a postcard view into the history of Pittsburgh, created for NACIS conference attendees. With an abundance of detail and few words, it elicits more questions than it answers.  It’s an invitation to dig deeper.
+<figure>
+    <a href="/files/NACIS_2023_printed.jpg"><img src="/files/NACIS_2023_printed.jpg"></a>
+    <figcaption>Program print view</figcaption>
+</figure>
+
+Through the Fire is a postcard-size view into the history of Pittsburgh, created for the NACIS conference program. With an abundance of detail and few words, it elicits more questions than it answers.  It’s an invitation for attendees to dig deeper.
+
+<figure>
+    <a href="/files/NACIS_2023_rings.jpg"><img src="/files/NACIS_2023_rings.jpg"></a>
+    <figcaption>Concentric circles of time</figcaption>
+</figure>
 
 Beginning at the confluence of the Allegheny and Monongahela rivers, the map spreads outward through time in concentric circles, from European colonization, to American Revolution and the discovery of coal. It hints that as the city grew into the steel capital of the world, its natural landscape was devastated. Then as its industrial engine faltered, large-scale urban renewal methods were used to try to clean it up.  Today, the city continues to redefine and rediscover itself.
 
 Hints of these transitions can be seen in the density of rail, building footprints, and the type of building material used.
 
-<figure class="half">
+<figure>
     <a href="/files/Cover_v3_600ppi_nobleed.png"><img src="/files/Cover_v3_600ppi_nobleed.png"></a>
     <figcaption></figcaption>
 </figure>
@@ -25,6 +35,11 @@ Hints of these transitions can be seen in the density of rail, building footprin
 I love making small maps, and really had to challenge myself to pull this idea together.  There is so much detail in the sources that it became more of an exercise in taking away than adding.
 
 I chose the orientation and scale to allow NACIS attendees to hold the map in their hand, look out over “the Mon” river from Station Square, and imagine what’s under the edges of the city. To get a small sense of just how much this place and its people have been through.
+
+<figure>
+    <a href="/files/NACIS_2023_sideview.jpg"><img src="/files/NACIS_2023_sideview.jpg"></a>
+    <figcaption>Side view concentric circles</figcaption>
+</figure>
 
 The concept of layers of time isn’t new, but the addition of concentric circles, like the rings of a tree, was a new revelation to me.
 
