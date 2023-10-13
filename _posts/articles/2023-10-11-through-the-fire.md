@@ -17,7 +17,7 @@ share: true
 Through the Fire is a postcard-size view into the history of Pittsburgh, created for the NACIS conference program. With an abundance of detail and few words, it elicits more questions than it answers.  It’s an invitation for attendees to dig deeper.
 
 <figure>
-    <a href="/files/NACIS_2023_rings.jpg"><img src="/files/NACIS_2023_rings.jpg"></a>
+    <a href="/files/NACIS_2023_rings.png"><img src="/files/NACIS_2023_rings.png"></a>
     <figcaption>Concentric circles of time</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ I love making small maps, and really had to challenge myself to pull this idea t
 I chose the orientation and scale to allow NACIS attendees to hold the map in their hand, look out over “the Mon” river from Station Square, and imagine what’s under the edges of the city. To get a small sense of just how much this place and its people have been through.
 
 <figure>
-    <a href="/files/NACIS_2023_sideview.jpg"><img src="/files/NACIS_2023_sideview.jpg"></a>
+    <a href="/files/NACIS_2023_sideview.png"><img src="/files/NACIS_2023_sideview.png"></a>
     <figcaption>Side view concentric circles</figcaption>
 </figure>
 
